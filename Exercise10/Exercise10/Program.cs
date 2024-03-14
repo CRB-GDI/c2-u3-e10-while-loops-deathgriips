@@ -14,13 +14,22 @@ namespace Exercise10
             Console.WriteLine("4 - Quit");
             Console.WriteLine("*******************");
 
-            bool userInput = bool.Parse(Console.ReadLine());
+            string userInput = Console.ReadLine();
 
             // Declare while loop
 
-            while (userInput = 1 || 2 || 3)
+            while (userInput == "1" || userInput == "2" || userInput == "3")
             {
                 Console.WriteLine("Loading...");
+                Console.WriteLine("*******************");
+                Console.WriteLine("Menu: ");
+                Console.WriteLine("1 - New Game");
+                Console.WriteLine("2 - Load Game");
+                Console.WriteLine("3 - Options");
+                Console.WriteLine("4 - Quit");
+                Console.WriteLine("*******************");
+
+                userInput = Console.ReadLine();
             }
         }
     }
